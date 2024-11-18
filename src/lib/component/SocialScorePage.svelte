@@ -38,7 +38,8 @@
 
   const updateDisplay = () => {
     displayPoints = Math.min(displayPoints, actualPoints);
-    console.log(`Dash Offset: ${dashOffset}, Display Points: ${displayPoints}`);
+    percentage = Math.max(1, ((maxPoints - displayPoints) / maxPoints * 100)).toFixed(2);
+    //console.log(`Dash Offset: ${dashOffset}, Display Points: ${displayPoints}`);
   };
 
   onMount(() => {

@@ -1,9 +1,9 @@
 <script lang="ts">
   import { onMount, beforeUpdate } from "svelte";
 
-  const maxValue = 130; // Maximum value of the gauge
-  let value = 0; // Initial value
-  let targetValue = 90; // Target value to animate to
+  const maxValue = 100; // Maximum value of the gauge
+  let value = -120; // Initial value
+  let targetValue = 60; // Target value to animate to
   let svgWidth: number; // This will be set based on the element's width
   const strokeWidth = 20; // Stroke width for the gauge circle
   let radius: number; // Adjusted radius considering stroke width
@@ -29,7 +29,7 @@
       } else {
         clearInterval(interval);
       }
-    }, 10);
+    }, 1);
   }
 
   onMount(() => {
@@ -82,7 +82,7 @@
 
   .gauge-fill {
     transition: stroke-dashoffset 0.8s ease-out;
-    transform: rotate(-240deg);
+    transform: rotate(-200deg);
     transform-origin: center;
   }
 </style>
