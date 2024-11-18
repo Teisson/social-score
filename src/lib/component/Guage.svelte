@@ -82,7 +82,7 @@
 
   .gauge-fill {
     transition: stroke-dashoffset 0.8s ease-out;
-    transform: rotate(-200deg);
+    transform: rotate(160deg);
     transform-origin: center;
   }
 </style>
