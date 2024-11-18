@@ -69,7 +69,7 @@
 <style>
   .gauge-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     height: auto;
     margin: auto;
   }
@@ -86,3 +86,4 @@
     transform-origin: center;
   }
 </style>
+
